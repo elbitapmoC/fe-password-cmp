@@ -21,7 +21,7 @@ function App() {
     <div className="app">
       <h1 className="center-text">Password Component</h1>
       <Password options={passwordReq} />
-      <p>
+      <p className="center-text">
         <iframe
           src="https://drive.google.com/file/d/1BwjJ-Jq9gqQtafb1IxLVkkeYxDvOgqej/preview"
           width="640"

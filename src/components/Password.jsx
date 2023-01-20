@@ -10,16 +10,17 @@ export const Password = ({ options }) => {
   return (
     <article className="flex__align--center">
       <input
+        className="full-width"
         value={userInput}
         type="text"
         placeholder="Enter password here"
         onChange={handleInputChange}
       />
-      <aside>
+      <aside className="full-width-alt">
         {options.map((option, index) => {
           let rule = option.rule(userInput);
           return (
-            <p className="margin__bottom--md">
+            <p key={index} className="margin__bottom--md">
               <span
                 className={
                   "circle text-white margin__right--md " +
@@ -28,7 +29,7 @@ export const Password = ({ options }) => {
               >
                 {rule ? "✓" : "X"}
               </span>
-              <span key={index}>{option.message}</span>
+              <span>{option.message}</span>
             </p>
           );
         })}
