@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 export const Password = ({ options }) => {
-  console.log(options);
   const [userInput, setUserInput] = useState("");
 
   const handleInputChange = (e) => {
@@ -10,15 +9,12 @@ export const Password = ({ options }) => {
 
   return (
     <article className="flex__align--center">
-      <form>
-        <label hidden>Password</label>
-        <input
-          value={userInput}
-          type="text"
-          placeholder="Enter password here"
-          onChange={handleInputChange}
-        />
-      </form>
+      <input
+        value={userInput}
+        type="text"
+        placeholder="Enter password here"
+        onChange={handleInputChange}
+      />
       <aside>
         {options.map((option, index) => {
           let rule = option.rule(userInput);

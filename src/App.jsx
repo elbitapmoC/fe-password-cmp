@@ -1,5 +1,5 @@
 import "./App.css";
-import { Password } from "./components/Password.jsx";
+import { Password } from "./components/Password";
 
 function App() {
   const passwordReq = [
