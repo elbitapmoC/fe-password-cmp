@@ -1,18 +1,18 @@
 import "./App.css";
-import { Password } from "./components/Password";
+import { Password } from "./components/Password.jsx";
 
 function App() {
   const passwordReq = [
     {
-      rule: (val: string) => /[0-9]/.test(val),
+      rule: (val) => /[0-9]/.test(val),
       message: "Has a number 0-9",
     },
     {
-      rule: (val: string) => /[!@#$%^&*]/.test(val),
+      rule: (val) => /[!@#$%^&*]/.test(val),
       message: "Has a special char: !@#$%^&*",
     },
     {
-      rule: (val: string) => /[A-Z]/.test(val),
+      rule: (val) => /[A-Z]/.test(val),
       message: "Has an uppercase letter",
     },
   ];
