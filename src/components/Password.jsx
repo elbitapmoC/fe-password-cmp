@@ -24,7 +24,7 @@ export const Password = ({ options }) => {
               <span
                 className={
                   "circle text-white margin__right--md " +
-                  (rule ? "good-circle" : "bad-circle")
+                  (rule ? "good" : "bad")
                 }
               >
                 {rule ? "✓" : "X"}

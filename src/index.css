@@ -38,11 +38,11 @@ body {
   align-items: center;
 }
 
-.good-circle {
+.good {
   background-color: green;
 }
 
-.bad-circle {
+.bad {
   background-color: red;
 }
 
